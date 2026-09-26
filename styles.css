@@ -1,0 +1,148 @@
+:root {
+    --bg-color: #0a0a0a;
+    --accent-color: #00bcd4;
+    --text-main: #ffffff;
+    --text-dim: #a0a0a0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 10%;
+    position: fixed;
+    width: 80%;
+    z-index: 1000;
+}
+
+.nav-links a {
+    color: var(--text-dim);
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.nav-links a.active, .nav-links a:hover {
+    color: var(--accent-color);
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                url('https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding-left: 10%;
+}
+
+.hero h1 {
+    font-size: 80px;
+    margin: 0;
+    letter-spacing: 5px;
+    line-height: 0.9;
+}
+
+.hero h3 {
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 5px;
+    color: var(--text-dim);
+}
+
+.subtitle {
+    color: var(--accent-color);
+    letter-spacing: 3px;
+    margin-bottom: 30px;
+}
+
+.btn-outline {
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-right: 15px;
+    transition: 0.3s;
+}
+
+.btn-outline:hover {
+    background: white;
+    color: black;
+}
+
+/* Skills & Progress Bar */
+.skills-section {
+    padding: 100px 10%;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+.skill-item {
+    margin-bottom: 20px;
+}
+
+.progress-bar {
+    background: #333;
+    height: 4px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.progress {
+    background: var(--accent-color);
+    height: 100%;
+}
+
+/* Timeline */
+.timelin{
+  border-left: 1px solid #333;
+    padding-left: 20px;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.dot {
+    position: absolute;
+    left: -25px;
+    top: 5px;
+    width: 10px;
+    height: 10px;
+    background: var(--accent-color);
+    border-radius: 50%;
+}
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
