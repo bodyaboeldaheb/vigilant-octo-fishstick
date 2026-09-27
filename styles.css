@@ -132,7 +132,86 @@ body {
     border-radius: 50%;
 }
     
-    
+    /* ===== إصلاح تراكب الأزرار ===== */
+.hero-btns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.btn-outline {
+  display: inline-block;
+}
+
+/* ===== Responsive - Mobile ===== */
+@media (max-width: 768px) {
+
+  .navbar {
+    width: 100%;
+    padding: 20px 5%;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .nav-links a {
+    margin-right: 12px;
+    font-size: 13px;
+  }
+
+  .contact-num {
+    font-size: 12px;
+  }
+
+  .hero {
+    padding-left: 6%;
+    padding-right: 6%;
+    height: auto;
+    min-height: 100vh;
+    padding-top: 120px;
+    padding-bottom: 60px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .hero h1 {
+    font-size: 42px;
+    letter-spacing: 2px;
+    word-break: break-word;
+  }
+
+  .hero h3 {
+    font-size: 18px;
+  }
+
+  .subtitle {
+    font-size: 13px;
+    letter-spacing: 2px;
+  }
+
+  .hero-btns {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .btn-outline {
+    display: block;
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  .skills-section {
+    padding: 60px 6%;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+}
     
     
     
